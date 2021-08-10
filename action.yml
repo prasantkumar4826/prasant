@@ -2,11 +2,6 @@ name: 'Thank You Action'
 description: 'Say "Thank You" to new pull requests'
 author: 'prasant
 
-inputs:
-  GITHUB_TOKEN:
-    description: 'GitHub token'
-    required: true
-
 
 runs:
   using: 'node12'
