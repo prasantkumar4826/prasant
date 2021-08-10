@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon src/action.js",
     "build": "ncc build src/action.js -o dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,8 +12,8 @@
     "type": "git",
     "url": "git+https://github.com/prasantkumar4826/prasant.git"
   },
-  "author": "prasant",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/prasantkumar4826/prasant/issues"
   },
