@@ -1,0 +1,23 @@
+{
+  "name": "prasant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build src/action.js -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prasantkumar4826/prasant.git"
+  },
+  "author": "prasant",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prasantkumar4826/prasant/issues"
+  },
+  "homepage": "https://github.com/prasantkumar4826/prasant#readme",
+  "devDependencies": {
+    "@vercel/ncc": "^0.29.0"
+  }
+}
