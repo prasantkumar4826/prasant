@@ -1,22 +1,7 @@
-const fetch = require('node-fetch');
 const core = require('@actions/core');
 const github = require('@actions/github');
 
 async function run() {
-
-
-  const response = await fetch(
-    "https://jsonplaceholder.typicode.com/posts",
-    {
-      method: "get",
-      headers: {
-        "Content-Type": "application/json"
-      },
-    }
-  );
-  const ResonseData = await response.text();
-  console.log("ResonseData : ", ResonseData);
-  
   const GITHUB_TOKEN = core.getInput('GITHUB_TOKEN');
   const octokit = github.getOctokit(GITHUB_TOKEN);
 
@@ -25,7 +10,7 @@ async function run() {
   await octokit.rest.issues.createComment({
   ...context.repo,
   issue_number: pull_request.number,
-  body: 'Thank you for submitting a pull request! We will try to review this as soon as we can.\n\n${ResonseData}'
+  body: 'Thank you for submitting a pull request! We will try to review this as soon as we can.'
 });
   }
   
