@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/colbyfayock/my-action-pull-request.git"
+    "url": "git+https://github.com/prasantkumar4826/prasant.git"
   },
   "author": "prasant",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/colbyfayock/my-action-pull-request/issues"
+    "url": "https://github.com/prasantkumar4826/prasant/issues"
   },
-  "homepage": "https://github.com/colbyfayock/my-action-pull-request#readme",
+  "homepage": "https://github.com/prasantkumar4826/prasant#readme",
   "devDependencies": {
     "@actions/core": "^1.4.0",
     "@actions/github": "^4.0.0",
