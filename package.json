@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/colbyfayock/my-action-pull-request.git"
   },
-  "author": "Colby Fayock <hello@colbyfayock.com>",
+  "author": "prasant",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/colbyfayock/my-action-pull-request/issues"
