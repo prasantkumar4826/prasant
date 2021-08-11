@@ -1,5 +1,5 @@
 {
-  "name": "my-action-pull-request",
+  "name": "prasant",
   "version": "1.0.0",
   "description": "Demo for tutorial - add a Thank You message and gif to new pull requests",
   "main": "index.js",
@@ -22,5 +22,8 @@
     "@actions/github": "^4.0.0",
     "@vercel/ncc": "^0.27.0",
     "node-fetch": "^2.6.1"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.12"
   }
 }
