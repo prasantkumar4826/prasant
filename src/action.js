@@ -1,3 +1,4 @@
+const fetch = require('node-fetch');
 const core = require('@actions/core');
 const github = require('@actions/github');
 
@@ -10,7 +11,7 @@ async function run() {
   await octokit.rest.issues.createComment({
   ...context.repo,
   issue_number: pull_request.number,
-  body: 'Thank you for submitting a pull request! We will try to review this as soon as we can.'
+  body: 'Thank you for submitting a pull request! We will try to review this as soon as we can.\n\n<h1>i am prasant</h1>'
 });
   }
   
