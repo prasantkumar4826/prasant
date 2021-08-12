@@ -6251,25 +6251,24 @@ const core = __nccwpck_require__(722);
 const github = __nccwpck_require__(408);
 
 async function run() {
-  const response = await fetch(
-    "C:/Users/prasa/Documents/GitHub/prasant/xyz.txt",
-  
-  );
-  const ResonseData = await response.text();
-  console.log("ResonseData : ", ResonseData);
+  const GITHUB_TOKEN = core.getInput('GITHUB_TOKEN');
+  const TENOR_TOKEN = core.getInput('TENOR_TOKEN');
 
-  const GITHUB_TOKEN = core.getInput("GITHUB_TOKEN");
+  const randomPos = Math.round(Math.random() * 1000);
+  const url = `https://api.tenor.com/v1/search?q=thank%20you&pos=${randomPos}&limit=1&media_filter=minimal&contentfilter=high&key=${TENOR_TOKEN}`;
+  const response = await fetch(url);
+  const { results } = await response.json();
+  const gifUrl = results[0].media[0].tinygif.url;
+
   const octokit = github.getOctokit(GITHUB_TOKEN);
 
   const { context = {} } = github;
   const { pull_request } = context.payload;
-
   await octokit.rest.issues.createComment({
-    ...context.owner,
-    ...context.repo,
-    issue_number: pull_request.number,
-    body: `Thank you for submitting a pull request! We will try to review this as soon as we can.\n\n${ResonseData}`,
-  });
+  ...context.repo,
+  issue_number: pull_request.number,
+  body: 'Thank you for submitting a pull request! We will try to review this as soon as we can.\n\n<table><tr><th>Month</th><th>Savings</th></tr><tr><td>January</td><td>$100</td></tr></table>'
+});
   }
   
   run();
