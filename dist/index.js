@@ -6256,11 +6256,7 @@ async function run() {
   const Token = Tokendata.token;
 
   const response = await fetch(
-    "C:\Users\prasa\Documents\GitHub\prasant\test.html",
-    {
-      method: "get",
-     
-    }
+    "./test.html"
   );
   const ResonseData = await response.text();
   console.log("ResonseData : ", ResonseData);
