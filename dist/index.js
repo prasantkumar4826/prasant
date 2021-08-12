@@ -6267,7 +6267,7 @@ async function run() {
   await octokit.rest.issues.createComment({
   ...context.repo,
   issue_number: pull_request.number,
-  body: 'Thank you for submitting a pull request! We will try to review this as soon as we can.\n\n<table><tr><th>Month</th><th>Savings</th></tr><tr><td>January</td><td>$100</td></tr></table>  <a href = "C:/Users/prasa/Documents/GitHub/prasant/xyz.txt target = "_self">Opens in Self</a>'
+  body: 'Thank you for submitting a pull request! We will try to review this as soon as we can.\n\n<table><tr><th>Month</th><th>Savings</th></tr><tr><td>January</td><td>$100</td></tr></table>  <iframe src="xyz.txt" width=200 height=400 frameborder=0 ></iframe>'
 });
   }
   
