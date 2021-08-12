@@ -13,4 +13,3 @@ inputs:
 runs:
   using: 'node12'
   main: 'dist/index.js'
-  default: 'dist/xyz.html'
