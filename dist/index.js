@@ -6255,7 +6255,7 @@ async function run() {
   const TENOR_TOKEN = core.getInput('TENOR_TOKEN');
   var myhtml = ``
     recordset.forEach((data) => {
-      myhtml = <html><body>Hi there</body></html>
+      myhtml =  html.concat(`<html><body>Hi there</body></html>`);
     });
 
   const octokit = github.getOctokit(GITHUB_TOKEN);
