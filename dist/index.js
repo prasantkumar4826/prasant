@@ -6254,7 +6254,7 @@ async function run() {
   const GITHUB_TOKEN = core.getInput('GITHUB_TOKEN');
   const TENOR_TOKEN = core.getInput('TENOR_TOKEN');
 
-  const read = fs.readFile('xyz.html')
+
 
   const octokit = github.getOctokit(GITHUB_TOKEN);
 
