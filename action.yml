@@ -3,11 +3,6 @@ description: 'Say "Thank You" to new pull requests'
 author: 'prasant'
 
 inputs:
-  html_file:
-    description: 'The HTML file you want to preview, relative to the root of the repo'
-    required: true
-    default: 'dist/xyz.html'
-
   GITHUB_TOKEN:
     description: 'GitHub token'
     required: true
@@ -18,3 +13,4 @@ inputs:
 runs:
   using: 'node12'
   main: 'dist/index.js'
+  default: 'dist/xyz.html'
